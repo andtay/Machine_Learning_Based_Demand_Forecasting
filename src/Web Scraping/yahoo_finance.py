@@ -70,7 +70,7 @@ print(df)
 
 ## Guardar en CSV
 # Path
-brent_oil_path = os.path.join(current_dir, '../data/raw/macrodata')
+brent_oil_path = os.path.join(current_dir, '../../data/raw/macrodata')
 # Crear un directorio si no existe
 os.makedirs(brent_oil_path, exist_ok=True)
 # Archivo CSV
