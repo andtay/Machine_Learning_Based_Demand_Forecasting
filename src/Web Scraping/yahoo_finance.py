@@ -22,7 +22,7 @@ driver = webdriver.Chrome(
     options = options
 )
 # Acceso a Yahoo Finance
-url="https://finance.yahoo.com/quote/BZ%3DF/history/?period1=1514764800&period2=1525824000"
+url="https://finance.yahoo.com/quote/WTI/history/?period1=1514678400&period2=1525824000"
 driver.get(url=url)
 try:
     # Rechazar el Botón de Consentimiento (Cookies)
@@ -74,7 +74,7 @@ brent_oil_path = os.path.join(current_dir, '../../data/raw/macrodata')
 # Crear un directorio si no existe
 os.makedirs(brent_oil_path, exist_ok=True)
 # Archivo CSV
-brent_oil_data = os.path.join(brent_oil_path, "brent_oil.csv")
+brent_oil_data = os.path.join(brent_oil_path, "wti_crude_oil.csv")
 # Guardar dataframe en CSV
 df.to_csv(brent_oil_data, index=False)
 
