@@ -8,6 +8,7 @@ data/raw/employees.csv
 data/raw/products.csv
 data/raw/sales.csv
 data/DB/
+data/raw/processed_data.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
