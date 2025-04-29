@@ -22,7 +22,7 @@ driver = webdriver.Chrome(
     options = options
 )
 # Acceso a Yahoo Finance
-url="https://finance.yahoo.com/quote/WTI/history/?period1=1514764800&period2=1525824000"
+url="https://finance.yahoo.com/quote/WTI/history/?period1=1514678400&period2=1525824000"
 driver.get(url=url)
 try:
     # Rechazar el Botón de Consentimiento (Cookies)
