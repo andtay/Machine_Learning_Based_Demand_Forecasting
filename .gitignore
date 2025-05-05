@@ -10,6 +10,9 @@ data/raw/sales.csv
 data/DB/
 data/raw/processed_data.csv
 data/raw/Dataframe_Final_Data.csv
+
+data/csv_model/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
