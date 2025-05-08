@@ -1,12 +1,13 @@
 # Walmart
-Walmar/tdata/raw/calendar.csv
-Walmar/data/raw/sales.csv
-Walmar/data/raw/sell_prices.csv
-Walmar/data/raw/sample_submission.csv
-Walmar/data/raw/total_data.csv
-Walmar/data/data_base/DB_Walmart
-Walmar/data/raw/final_data.csv
-
+Walmart/data/raw/calendar.csv
+Walmart/data/raw/sales.csv
+Walmart/data/raw/sell_prices.csv
+Walmart/data/raw/sample_submission.csv
+Walmart/data/raw/total_data.csv
+Walmart/data/data_base/DB_Walmart
+Walmart/data/raw/final_data.csv
+Walmart/data/raw/sales_train_evaluation.csv
+Walmart/data/raw/sales_train_validation.csv
 
 # POC
 
