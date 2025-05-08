@@ -22,12 +22,13 @@ driver = webdriver.Chrome(
     options=options
 )
 
-# https://finance.yahoo.com/quote/WTI/history/?period1=1296259200&period2=1463875200
+# https://finance.yahoo.com/quote/CL%3DF/history/?period1=1296259200&period2=1463875200
+
 # POC
 # https://finance.yahoo.com/quote/WTI/history/?period1=1514678400&period2=1525824000
 
 # URL objetivo
-url = "https://finance.yahoo.com/quote/WTI/history/?period1=1296259200&period2=1463875200"
+url = "https://finance.yahoo.com/quote/CL%3DF/history/?period1=1296259200&period2=1463875200"
 
 def get_dataframe(data_body):
     list_stock = []
