@@ -10,6 +10,8 @@ Walmart/data/raw/final_data.csv
 Walmart/data/raw/sales_train_evaluation.csv
 Walmart/data/raw/sales_train_validation.csv
 
+Walmart/data/csv_model/
+
 # POC
 
 POC/data/raw/categories.csv

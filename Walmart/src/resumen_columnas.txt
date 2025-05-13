@@ -1,30 +1,30 @@
 Columna: id
-  Valores únicos: 26670
-  Valores nulos: 0
-  Tipo de dato: object
-
-Columna: item_id
-  Valores únicos: 3049
-  Valores nulos: 0
-  Tipo de dato: object
-
-Columna: dept_id
-  Valores únicos: 7
-  Valores nulos: 0
-  Tipo de dato: object
-
-Columna: cat_id
-  Valores únicos: 3
-  Valores nulos: 0
-  Tipo de dato: object
-
-Columna: store_id
   Valores únicos: 10
   Valores nulos: 0
   Tipo de dato: object
 
+Columna: item_id
+  Valores únicos: 10
+  Valores nulos: 0
+  Tipo de dato: object
+
+Columna: dept_id
+  Valores únicos: 1
+  Valores nulos: 0
+  Tipo de dato: object
+
+Columna: cat_id
+  Valores únicos: 1
+  Valores nulos: 0
+  Tipo de dato: object
+
+Columna: store_id
+  Valores únicos: 1
+  Valores nulos: 0
+  Tipo de dato: object
+
 Columna: state_id
-  Valores únicos: 3
+  Valores únicos: 1
   Valores nulos: 0
   Tipo de dato: object
 
@@ -34,7 +34,7 @@ Columna: d
   Tipo de dato: object
 
 Columna: sales
-  Valores únicos: 140
+  Valores únicos: 54
   Valores nulos: 0
   Tipo de dato: int64
 
@@ -70,22 +70,22 @@ Columna: year
 
 Columna: event_name_1
   Valores únicos: 30
-  Valores nulos: 891500
+  Valores nulos: 17830
   Tipo de dato: object
 
 Columna: event_type_1
   Valores únicos: 4
-  Valores nulos: 891500
+  Valores nulos: 17830
   Tipo de dato: object
 
 Columna: event_name_2
   Valores únicos: 4
-  Valores nulos: 968500
+  Valores nulos: 19370
   Tipo de dato: object
 
 Columna: event_type_2
   Valores únicos: 2
-  Valores nulos: 968500
+  Valores nulos: 19370
   Tipo de dato: object
 
 Columna: snap_CA
@@ -104,7 +104,7 @@ Columna: snap_WI
   Tipo de dato: int64
 
 Columna: sell_price
-  Valores únicos: 779
-  Valores nulos: 198189
+  Valores únicos: 22
+  Valores nulos: 3234
   Tipo de dato: float64
 
