@@ -1,110 +1,110 @@
 Columna: id
-  Valores Ãºnicos: 5160
+  Valores únicos: 10
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: item_id
-  Valores Ãºnicos: 516
+  Valores únicos: 10
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: dept_id
-  Valores Ãºnicos: 2
+  Valores únicos: 1
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: cat_id
-  Valores Ãºnicos: 1
+  Valores únicos: 1
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: store_id
-  Valores Ãºnicos: 10
+  Valores únicos: 1
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: state_id
-  Valores Ãºnicos: 3
+  Valores únicos: 1
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: d
-  Valores Ãºnicos: 1941
+  Valores únicos: 1941
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: sales
-  Valores Ãºnicos: 148
+  Valores únicos: 54
   Valores nulos: 0
   Tipo de dato: int64
 
 Columna: date
-  Valores Ãºnicos: 1941
+  Valores únicos: 1941
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: wm_yr_wk
-  Valores Ãºnicos: 278
+  Valores únicos: 278
   Valores nulos: 0
   Tipo de dato: int64
 
 Columna: weekday
-  Valores Ãºnicos: 7
+  Valores únicos: 7
   Valores nulos: 0
   Tipo de dato: object
 
 Columna: wday
-  Valores Ãºnicos: 7
+  Valores únicos: 7
   Valores nulos: 0
   Tipo de dato: int64
 
 Columna: month
-  Valores Ãºnicos: 12
+  Valores únicos: 12
   Valores nulos: 0
   Tipo de dato: int64
 
 Columna: year
-  Valores Ãºnicos: 6
+  Valores únicos: 6
   Valores nulos: 0
   Tipo de dato: int64
 
 Columna: event_name_1
-  Valores Ãºnicos: 30
-  Valores nulos: 9200280
+  Valores únicos: 30
+  Valores nulos: 17830
   Tipo de dato: object
 
 Columna: event_type_1
-  Valores Ãºnicos: 4
-  Valores nulos: 9200280
+  Valores únicos: 4
+  Valores nulos: 17830
   Tipo de dato: object
 
 Columna: event_name_2
-  Valores Ãºnicos: 4
-  Valores nulos: 9994920
+  Valores únicos: 4
+  Valores nulos: 19370
   Tipo de dato: object
 
 Columna: event_type_2
-  Valores Ãºnicos: 2
-  Valores nulos: 9994920
+  Valores únicos: 2
+  Valores nulos: 19370
   Tipo de dato: object
 
 Columna: snap_CA
-  Valores Ãºnicos: 2
+  Valores únicos: 2
   Valores nulos: 0
   Tipo de dato: int64
 
 Columna: snap_TX
-  Valores Ãºnicos: 2
+  Valores únicos: 2
   Valores nulos: 0
   Tipo de dato: int64
 
 Columna: snap_WI
-  Valores Ãºnicos: 2
+  Valores únicos: 2
   Valores nulos: 0
   Tipo de dato: int64
 
 Columna: sell_price
-  Valores Ãºnicos: 581
-  Valores nulos: 1952496
+  Valores únicos: 22
+  Valores nulos: 3234
   Tipo de dato: float64
 
