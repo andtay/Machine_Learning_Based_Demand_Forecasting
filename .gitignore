@@ -11,6 +11,7 @@ Walmart/data/raw/sales_train_evaluation.csv
 Walmart/data/raw/sales_train_validation.csv
 
 Walmart/data/csv_model/
+Walmart/models/
 
 # POC
 
