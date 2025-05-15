@@ -9,8 +9,11 @@ Walmart/data/raw/Dataframe_Final_Data.csv
 Walmart/data/raw/final_data.csv
 Walmart/data/raw/sales_train_evaluation.csv
 Walmart/data/raw/sales_train_validation.csv
+Walmart/data/raw/Dataframe_Final_Data_XGBoost.csv
+
 
 Walmart/data/csv_model/
+Walmart/models/
 
 # POC
 
@@ -26,6 +29,7 @@ POC/data/raw/processed_data.csv
 POC/data/raw/Dataframe_Final_Data.csv
 
 POC/data/csv_model/
+POC/models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
