@@ -24,7 +24,7 @@ current_dir = os.path.abspath(os.path.dirname(__file__))
 # Función para cargar datos con caché
 @st.cache_data
 def load_data():
-    csv_path = "/Users/jesus/Desktop/streamlit - proyecto final/Machine_Learning_Based_Demand_Forecasting/Walmart/data/raw/Final_XGBoost_data_processed.csv"
+    csv_path = os.path.join(current_dir, "..", "data", "raw", "Final_XGBoost_data_processed.csv")
     try:
         data = pd.read_csv(csv_path)
         # Convertir la columna 'month' de timestamp a número de mes
@@ -38,7 +38,7 @@ def load_data():
 # Función para cargar modelo con caché
 @st.cache_resource
 def load_model(product_id, store_id):
-    model_path = f"/Users/jesus/Desktop/streamlit - proyecto final/Machine_Learning_Based_Demand_Forecasting/Walmart/models/Final_model_XGBOOST_{product_id}_{store_id}.sav"
+    model_path = os.path.join(current_dir, "..", "models", f"Final_model_XGBOOST_{product_id}_{store_id}.sav")
     if not os.path.exists(model_path):
         st.error(f"No se encontró el modelo en: {model_path}")
         return None
@@ -52,7 +52,7 @@ def load_model(product_id, store_id):
 # Función para obtener productos y sus tiendas asociadas desde los nombres de los modelos
 @st.cache_data
 def get_available_models():
-    model_dir = "/Users/jesus/Desktop/streamlit - proyecto final/Machine_Learning_Based_Demand_Forecasting/Walmart/models"
+    model_dir = os.path.join(current_dir, "..", "models")
     product_to_stores = {}
     products = set()
     model_pattern = re.compile(r"Final_model_XGBOOST_(.+)_([A-Z]{2}_\d+)\.sav")
@@ -80,7 +80,7 @@ def get_available_models():
 ##################################
 
 # Mostrar logo de Walmart al inicio
-walmart_logo_path = "/Users/jesus/Desktop/streamlit - proyecto final/Machine_Learning_Based_Demand_Forecasting/Walmart/data/raw/Walmart_logo.svg.png"
+walmart_logo_path = os.path.join(current_dir, "..", "data", "raw", "Walmart_logo.svg.png")
 if os.path.exists(walmart_logo_path):
     st.image(walmart_logo_path, use_container_width=True)
 else:
