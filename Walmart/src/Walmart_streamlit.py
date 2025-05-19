@@ -325,7 +325,7 @@ if st.session_state["username"] is not None:
                         predicted_log = model.predict(prediction_data[feature_columns])[0]
                         predicted_demand = np.expm1(predicted_log)
                         
-                        # Obtener demanda real (usamos el último mes disponible, e.g., mayo 2016)
+                        # Obtener demanda real (usamos el último mes disponible, e.g., junio 2016)
                         real_demand = last_row['sales']
                         
                         # Crear gráfico de barras 2D con efecto pseudo-3D
@@ -339,7 +339,7 @@ if st.session_state["username"] is not None:
                         fig.add_trace(go.Bar(
                             x=[0],
                             y=[real_demand],
-                            name='Demanda Real (Mayo 2016)',
+                            name='Demanda Real (Junio 2016)',
                             marker_color='rgb(55, 83, 109)',
                             marker_line_color='rgb(8, 48, 107)',
                             marker_line_width=2,
