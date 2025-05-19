@@ -1,15 +1,8 @@
-import streamlit as st
-import os
-from datetime import datetime
-import pandas as pd
-import joblib
-import re
-import plotly.graph_objects as go
-import plotly.express as px
-import numpy as np
-from reportlab.lib.pagesizes import letter
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.lib import colors
-import io
-import matplotlib.pyplot as plt
+streamlit
+pandas
+joblib
+plotly
+numpy
+reportlab
+matplotlib
+xgboost
