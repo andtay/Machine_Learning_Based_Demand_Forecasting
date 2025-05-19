@@ -190,9 +190,9 @@ if st.session_state["username"] is not None:
             st.sidebar.warning("No hay tiendas disponibles para el producto seleccionado.")
             st.sidebar.write("Estado: No seleccionado")
 
-        # Selección de mes y año (fijado a junio de 2016)
+        # Selección de mes y año (fijado a Mayo de 2016)
         st.sidebar.subheader("Período de predicción")
-        selected_month = st.sidebar.selectbox("Mes", ["Junio"], disabled=True, key="month_select")
+        selected_month = st.sidebar.selectbox("Mes", ["Mayo"], disabled=True, key="month_select")
         selected_year = st.sidebar.selectbox("Año", [2016], disabled=True, key="year_select")
 
         ##################################
@@ -281,7 +281,7 @@ if st.session_state["username"] is not None:
                 if data is None:
                     st.stop()
 
-                # Preparar datos para la predicción (junio de 2016)
+                # Preparar datos para la predicción (Mayo de 2016)
                 try:
                     # Filtrar datos para la tienda y producto seleccionados
                     filtered_data = data[(data['store_id'] == selected_store) & (data['item_id'] == selected_product)].copy()
@@ -303,7 +303,7 @@ if st.session_state["username"] is not None:
                             st.error(f"Faltan las siguientes columnas en los datos: {missing_columns}")
                             st.stop()
                         
-                        # Preparar datos para la predicción de junio 2016
+                        # Preparar datos para la predicción de Mayo 2016
                         last_row = filtered_data.iloc[-1]
                         prediction_data = pd.DataFrame({
                             'event_name_1': [last_row['event_name_1']],
@@ -321,11 +321,11 @@ if st.session_state["username"] is not None:
                             'month_11': [0], 'month_12': [0]
                         })
                         
-                        # Realizar la predicción para junio 2016
+                        # Realizar la predicción para Mayo 2016
                         predicted_log = model.predict(prediction_data[feature_columns])[0]
                         predicted_demand = np.expm1(predicted_log)
                         
-                        # Obtener demanda real (usamos el último mes disponible, e.g., junio 2016)
+                        # Obtener demanda real (usamos el último mes disponible, e.g., Mayo 2016)
                         real_demand = last_row['sales']
                         
                         # Crear gráfico de barras 2D con efecto pseudo-3D
@@ -339,7 +339,7 @@ if st.session_state["username"] is not None:
                         fig.add_trace(go.Bar(
                             x=[0],
                             y=[real_demand],
-                            name='Demanda Real (Junio 2016)',
+                            name='Demanda Real (Mayo 2016)',
                             marker_color='rgb(55, 83, 109)',
                             marker_line_color='rgb(8, 48, 107)',
                             marker_line_width=2,
@@ -377,7 +377,7 @@ if st.session_state["username"] is not None:
                         fig.add_trace(go.Bar(
                             x=[1],
                             y=[predicted_demand],
-                            name='Demanda Predicha (Junio 2016)',
+                            name='Demanda Predicha (Mayo 2016)',
                             marker_color='rgb(255, 140, 0)',
                             marker_line_color='rgb(204, 102, 0)',
                             marker_line_width=2,
@@ -414,7 +414,7 @@ if st.session_state["username"] is not None:
                         # Actualizar el diseño
                         fig.update_layout(
                             title={
-                                'text': "Demanda Real vs. Predicha para Junio 2016",
+                                'text': "Demanda Real vs. Predicha para Mayo 2016",
                                 'y': 0.95,
                                 'x': 0.5,
                                 'xanchor': 'center',
@@ -573,7 +573,7 @@ if st.session_state["username"] is not None:
                     story.append(Spacer(1, 12))
 
                     # Tabla de predicciones
-                    table_data = [['Producto', 'Estado', 'Tienda', 'Demanda real (mayo 2016)', 'Demanda predicha (junio 2016)', '% Error']]
+                    table_data = [['Producto', 'Estado', 'Tienda', 'Demanda real (mayo 2016)', 'Demanda predicha (Mayo 2016)', '% Error']]
                     image_paths = []
 
                     for product in selected_products:
