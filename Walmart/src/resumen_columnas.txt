@@ -105,6 +105,6 @@ Columna: snap_WI
 
 Columna: sell_price
   Valores únicos: 22
-  Valores nulos: 3234
+  Valores nulos: 3234 
   Tipo de dato: float64
 
